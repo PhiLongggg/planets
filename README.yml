@@ -11,7 +11,72 @@ Monitor(10.60.0.30)
 |   |   ├── telegram.sh
 |   |   ├── 2.backup_DB.sh
 |   |   ├── 4.zip-log-mongodb.sh
-|   |   ├── 8.cleaAPI A (10.200.64.11)
+|   |   ├── 8.clear_index_elk.sh
+|   |   └── 3.gen_handover.sh
+|   ├── deploy
+|   ├── mongodb
+|   ├── PostgreSQL-12
+|   ├── backup
+|   └── mattermost(Sphotonchat)
+└──
+
+APP A(10.60.0.20)
+├── log
+│   └── archived   
+├── opt
+│   ├── script
+|   |   └── 4.zip-log-mongodb.sh
+|   ├── mattermost(Sphotonchat)
+|   ├── mongodb
+|   ├── bak.cqsta
+|   ├── newsource
+|   ├── push-proxy
+|   ├── backup
+|   ├── bak.mattermost
+|   └──  cqsta
+|        ├── Gatewaytv
+|        ├── Gatewaypoems3
+|        ├── Cqlearning-api
+|        ├── Community-api
+|        ├── Cqtv-api
+|        ├── Eureka
+|        ├── Frontendweb
+|        ├── Authserver-api
+|        ├── Cqcore-api
+|        ├── Backend-api
+|        └── Gateway
+└──
+
+
+APP B(10.60.0.21)
+├── log
+│   └── archived   
+├── opt
+│   ├── script
+|   |   └── 4.zip-log-mongodb.sh
+|   ├── mattermost(Sphotonchat)
+|   ├── mongodb
+|   ├── bak.cqsta
+|   ├── newsource
+|   ├── push-proxy
+|   ├── backup
+|   ├── bak.mattermost
+|   └──  cqsta
+|        ├── Gatewaytv
+|        ├── Gatewaypoems3
+|        ├── Cqlearning-api
+|        ├── Community-api
+|        ├── Cqtv-api
+|        ├── Eureka
+|        ├── Frontendweb
+|        ├── Authserver-api
+|        ├── Cqcore-api
+|        ├── Backend-api
+|        └── Gateway
+└──
+
+
+NOVA-API A (10.200.64.11)
 ├── log
 |    ├── streaming-api-error.log
 |    ├── streaming-api-access.log
