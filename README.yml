@@ -1,1 +1,112 @@
+Monitor(10.60.0.30)
+├── omd( Dữ liệu về CheckMK)
+│   ├── apache
+|   ├── sites
+|   └── versions
+├── opt
+│   ├── script
+│   │   ├── zip.sh
+|   |   ├── 5.check_domain.sh 
+|   |   ├── telegramDB.sh
+|   |   ├── telegram.sh
+|   |   ├── 2.backup_DB.sh
+|   |   ├── 4.zip-log-mongodb.sh
+|   |   ├── 8.cleaAPI A (10.200.64.11)
+├── log
+|    ├── streaming-api-error.log
+|    ├── streaming-api-access.log
+|    ├── nova-api.log
+|    ├── nova-statistics-api.log
+|    ├── streaming-api-info.log
+│    └── archived   
+├── opt
+│   ├── messages 
+|   ├── CrowdStrike
+|   ├── newsource
+|   ├── nova_api_bk
+|       ├── nova-api-v1.zip
+|       └──  redis.conf
+|   ├── newsource
+|   ├── nova_streaming
+|       ├── start_streaming_api.sh
+|   ├── backup
+|       ├── systemd
+|       ├── crontab
+|       ├── influxdb
+|       └──  nova-api
+|   ├── nova_api
+|       ├── daily-statistic-output
+|           ├── nova-tradingview_daily_statistic
+|       ├── resources
+|           ├── config
+|           └── templates
+|       ├── start-nova-api.sh
+|       ├── statistics-output
+|           ├── nova_tradingview_weekly_statistics
+|       ├── nova-api-v1.jar
+|   ├── nova_tradingview_statistics 
+|        ├── nova-statistics
+|            ├── daily
+|                ├── nova_tradingview_daily_statistics
+|        ├── resources
+|    ├── script
+|        ├── check-log
+|            ├── 1.check-ERROR
+|            ├── 2.sent-telegram
+|            ├── error-log
+|            └──  error-log-backup
+|        ├── check-system
+|            ├── 1.check_system
+|            ├── 2.sent-telegram
+|           ├──output-log
+|           └──  output-log-backup
+|       ├── report-system
+|           ├── 1.report-system.sh
+|           └──  2.sent-telegram.sh
+└──
 
+NOVA-API B (10.200.65.11)
+├── log
+|    ├── streaming-api-error.log
+|    ├── streaming-api-access.log
+|    ├── nova-api.log
+|    ├── nova-statistics-api.log
+|    ├── streaming-api-info.log
+│    └── archived   
+├── opt 
+|   ├── CrowdStrike
+|   ├── newsource
+|   ├── nova_streaming
+|       ├── start_streaming_api.sh
+|   ├── backup
+|       ├── systemd
+|       ├── crontab
+|       ├── influxdb
+|       ├── script
+|       ├── streaming
+|       ├── postgreSQL
+|       └── streaming
+|   ├── nova_api
+|       ├── resources
+|           ├── config
+|           └── templates
+|       ├── start-nova-api.sh
+|   ├── nova_streaming
+|        ├── start_streaming_api.sh
+|   ├── newsource
+|   ├── script
+|        ├── 1.Backup_logs.
+|        ├── check-log
+|            ├── 1.check-ERROR
+|            ├── 2.sent-telegram
+|            ├── error-log
+|            └──  error-log-backup
+|        ├── check-system
+|            ├── 1.check_system
+|            ├── 2.sent-telegram
+|           ├──output-log
+|           └──  output-log-backup
+|       ├── report-system
+|           ├── 1.report-system.sh
+|           └──  2.sent-telegram.sh
+└──
